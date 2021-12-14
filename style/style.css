@@ -1,0 +1,162 @@
+/* landing page */
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: auto 1fr auto;
+  gap: 5px;
+  height: 90vh;
+}
+
+header, 
+footer {
+  font-size: 2em;
+  grid-column: 1 / 4;
+}
+
+header, 
+aside, 
+article, 
+footer {
+  border-style: 2px solid white;
+  background: white;
+}
+
+article {
+  color: #37373D;
+  font-size: 2em;
+  /* height: 1500px; */
+}
+
+.bar-bottom {
+  bottom: 0;
+  left: 0;
+  color: #F2F2F2;
+  background-color: #A31F34;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-size: 1em;
+}
+
+.navbar-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #A31F34;
+  padding: 0 100px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  font-family: fantasy;
+  letter-spacing: 0.2em;
+  /* visibility: hidden; */
+}
+
+.navbar-top a {
+  float: left;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar-top a:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.navbar-active {
+  background-color: #37373D;
+  color: white;
+}
+
+.avatar {
+  width: 150px;
+  border: 4px solid grey;
+  border-radius: 50%;
+  margin-left: 75px;
+}
+
+.content-column {
+  width: 50%;
+  font-size: 0.75em;
+  color: grey;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+
+.content-column a {
+  color: #A31F34;
+  font-weight: bold;
+}
+
+.content-column a:hover {
+  text-decoration: none;
+  color: #37373D;
+  font-weight: bold;
+}
+
+.user-info {
+  font-size: 0.8em;
+  /* border: 1px solid black; */
+}
+
+.content {
+  table-layout: fixed;
+  width: 100%;
+  font-family: monospace;
+}
+
+.user-info-field {
+  text-align: right;
+}
+
+/* portfolio page */
+
+.main {
+  top: 200px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 50%;
+  margin:auto;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-header {
+	color: black;
+  font-weight: bold;
+}
+
+.card-body {
+  width: 320px;
+	height: 210px;
+}
+
+.card-footer a {
+  color: #A31F34;
+  font-weight: bold;
+}
+
+.card-footer a:hover {
+  text-decoration: none;
+  color: #37373D;
+  font-weight: bold;
+}
+
+.card-description {
+  border-top: 1px solid #D8D8D8;
+  text-align: left;
+  padding: 10px;
+  height: 300px;
+}
